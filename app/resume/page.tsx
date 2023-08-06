@@ -1,5 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
 import { resumeData } from "../../lib/constants/resumeData";
 
 export default function Resume() {
@@ -23,24 +21,24 @@ export default function Resume() {
               {resume.data.map((data) => (
                 <div key={data.name} className="mb-4 flex md:flex-row flex-col">
                   <section className="mb-1 md:mx-3 flex w-64">
-                    {data.year}
+                    {(data as any).year}
                   </section>
                   <div className="flex-col flex w-full">
                     <section className="mb-4">
                       <span className=" font-semibold mb-0">{data.name} </span>
-                      {data.role && (
-                        <span className="text-gray-500 italic font-semibold"> | {data.role}</span>
+                      {(data as any).role && (
+                        <span className="text-gray-500 italic font-semibold"> | {(data as any).role}</span>
                       )}
                     </section>
 
-                    {Array.isArray(data.desc) ? (
+                    {Array.isArray((data as any).desc) ? (
                       <ul className="list-disc ml-8">
-                        {data.desc.map((value,idx) => (
+                        {(data as any).desc.map((value: any,idx: number) => (
                           <li key={idx}>{value}</li>
                         ))}
                       </ul>
-                    ) : data.desc ? (
-                      <span className="mb-2 ml-3">{data.desc}</span>
+                    ) : (data as any).desc ? (
+                      <span className="mb-2 ml-3">{(data as any).desc}</span>
                     ) : null}
                   </div>
                 </div>

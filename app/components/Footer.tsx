@@ -11,7 +11,7 @@ export default function Footer() {
             <span className="font-bold text-lg mb-2">{con.name}</span>
             <div className="flex text-gray-600">
               {con.type !== "image" ? (
-                <span>{con.value[0]}</span>
+                <span>{(con as any).value[0]}</span>
               ) : (
                 con.value.map((imageData) => (
                   <Link target="_blank" key={imageData.id} href={imageData.link}>

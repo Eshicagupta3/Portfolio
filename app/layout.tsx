@@ -25,7 +25,7 @@ export default function RootLayout({
         href="https://static.parastorage.com/services/third-party/fonts/Helvetica/fontFace.css"
         rel="stylesheet"
       />
-      <body className={`${inter.variable} ${roboto_mono.variable}`}>
+      <body className={`${(inter as any).variable} ${(roboto_mono as any).variable}`}>
         <Provider>
           <Header />
           {children}
