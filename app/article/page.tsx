@@ -4,7 +4,7 @@ import { articleList } from "../../lib/constants/articleList";
 
 export default function Article() {
   return (
-    <main className="flex min-h-screen justify-center md:p-24 p-3 bg-gradient-to-t md:mb-64">
+    <main className="page-fadein-animation flex min-h-screen justify-center md:p-24 p-3 bg-gradient-to-t md:mb-64">
       <div className="flex flex-col">
         <h1 className="my-4">Articles</h1>
         {articleList.map((article, idx) => (

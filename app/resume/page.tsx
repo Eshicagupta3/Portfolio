@@ -4,7 +4,7 @@ import { resumeData } from "../../lib/constants/resumeData";
 
 export default function Resume() {
   return (
-    <main className="flex min-h-screen md:p-24 p-3 bg-gradient-to-t">
+    <main className="page-fadein-animation  flex min-h-screen md:p-24 p-3 bg-gradient-to-t">
       <div className="flex flex-col flex-grow">
         <h1 className="mb-4">Resume</h1>
         {resumeData.map((resume, idx) => (

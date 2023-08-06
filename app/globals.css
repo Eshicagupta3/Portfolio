@@ -16,38 +16,72 @@
   }
 }
 html {
-  font-family: var(--font-inter);
+  font-family: 'REM';
+}
+@media only screen and (min-width: 700px) {
+  .bigimage {
+    width: 480px;
+    height: 480px;
+  }
 }
 body {
-  color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
       transparent,
-      rgb(var(--background-end-rgb))
+      rgb(var(--background-start-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-end-rgb));
 }
 
+
 h1 {
-  font-family: var(--font-roboto-mono);
   font-size: 32px;
-  font-weight: bold;
+  font-weight: 600;
 }
 
 h3 {
-  font-family: var(--font-roboto-mono);
+ 
   font-size: 24px;
   font-weight: 400;
 }
 
 h2 {
-  font-family: var(--font-roboto-mono);
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 500;
 }
  
 sub {
   font-family: var(--font-inter);
   font-size: 12px;
   font-weight: 200;
+}
+@keyframes fadeInTransform {  
+  from {  
+      opacity:0;
+      transform: translateY(70vh);  
+  }  
+
+  to {  
+      opacity:1;
+      transform: translateY(0);   
+  }  
+}
+@keyframes fadeIn {  
+  from {  
+      opacity:0;
+  }  
+
+  to {  
+      opacity:1;
+     
+  }  
+}
+.page-animation {
+  opacity:1;
+  animation: fadeInTransform 2s ease; 
+}
+
+.page-fadein-animation {
+  opacity:1;
+  animation: fadeIn 2s ease; 
 }
