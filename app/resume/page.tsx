@@ -5,13 +5,19 @@ export default function Resume() {
   return (
     <main className="page-fadein-animation  flex min-h-screen md:p-24 p-3 bg-gradient-to-t">
       <div className="flex flex-col flex-grow">
-        <h1 className="mb-4">Resume</h1>
+        <div className="flex items-center mb-4">
+          <h1 className="mr-3">Resume</h1>
+          <a href="/ishika_frontend_4yrs.pdf" download>
+            <button className="border-2 border-yellow-500 rounded-xl bg-yellow-400 p-2">Download &#8595;</button>
+          </a>
+        </div>
+
         {resumeData.map((resume, idx) => (
           <div
             className={`flex md:flex-row flex-col justify-between m-4   ${
               idx == resumeData.length - 1
                 ? ""
-                : " border-b-2border-b-2 border-gray-300"
+                : " border-b-2 border-gray-300"
             }`}
             key={resume.id}
           >
