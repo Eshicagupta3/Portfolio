@@ -9,10 +9,12 @@ export const resumeData = [
         link: 'https://myntra.com',
         role: "senior software engineer",
         desc: [
+          "Collaborate with the UX and cross platform  teams to implement complex features and UI components.",
+          "Perform A/B testing and Feature gate and leverage analytics to identify user behavior patterns",
           "Worked on reducing and monitoring server side errors (5xx/4xx ) Prometheus - promql",
           "Contributed to migrating code from javascript to Typescript.",
           "Published library Header and Footer for web using Vite to be able to be used across org.",
-          "Help in onboarding new team members.",
+          "Help in onboarding new team members. Code reviews and enforce best practices for code quality and maintainability",
         ],
       },
       {
