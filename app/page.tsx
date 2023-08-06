@@ -17,7 +17,7 @@ export default function Home() {
           <h2 className="text-xl">A bit About me</h2>
           <span className="my-2">
             Frontend Engineer with four years of experience, specializing in
-            building dynamic and user-friendly web applications. Outside of work, I love to do dance, trevelling.
+            building dynamic and user-friendly web applications. Outside of work, I love to do dance, travelling.
           </span>
           <div className="flex justify-between my-3">
             <Link

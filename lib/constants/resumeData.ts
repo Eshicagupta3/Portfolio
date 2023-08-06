@@ -5,7 +5,8 @@ export const resumeData = [
     data: [
       {
         year: "Aug 2021-Present",
-        name: "Myntra",
+        name: "Myntra designs private limited",
+        link: 'https://myntra.com',
         role: "senior software engineer",
         desc: [
           "Worked on reducing and monitoring server side errors (5xx/4xx ) Prometheus - promql",
@@ -16,7 +17,8 @@ export const resumeData = [
       },
       {
         year: "Jan 2021-Aug 2021",
-        name: "Nykaa",
+        name: "Nykaa Fashion Private Limited",
+        link: 'https://nykaa.com',
         role: "software engineer",
         desc: [
           "Integrate our own package for sticky sidebar plugin Js.",
@@ -26,7 +28,8 @@ export const resumeData = [
       },
       {
         year: "2019-2021",
-        name: "Gradeup",
+        name: "BYJU'S Exam Prep",
+        link: 'https://byjusexamprep.com/',
         role: "software engineer",
         desc: [
           "Responsibility of maintaining Gradeup studio(admin panel) used for the management of the courses and live classes.",
@@ -39,26 +42,28 @@ export const resumeData = [
       },
     ],
   },
-  {
-    id: "article2",
-    name: "Education",
-    data: [
-      {
-        year: "2015-2019",
-        name: "J.S.S. Academy of Technical Education, Noida",
-        role: "B-TECH, IT",
-      },
-    ],
-  },
+  // {
+  //   id: "article2",
+  //   name: "Education",
+  //   data: [
+  //     {
+  //       year: "2015-2019",
+  //       name: "J.S.S. Academy of Technical Education, Noida",
+  //       role: "B-TECH, IT",
+  //     },
+  //   ],
+  // },
   {
     id: "Skills & Expertise",
     name: "Skills & Expertise",
     data: [
       {
-        name: "client",
+        link: '',
+        name: "Client",
         desc: "React | HTML | CSS | Javascript | React-native",
       },
       {
+        link: '',
         name: "Server",
         desc: "Golang | Nodejs | Graphql",
       },

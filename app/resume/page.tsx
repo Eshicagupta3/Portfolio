@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { resumeData } from "../../lib/constants/resumeData";
 
 export default function Resume() {
@@ -25,20 +26,36 @@ export default function Resume() {
                   </section>
                   <div className="flex-col flex w-full">
                     <section className="mb-4">
-                      <span className=" font-semibold mb-0">{data.name} </span>
+                      {data.link ? (
+                        <Link target="_blank" href={data.link}>
+                          {" "}
+                          <span className=" font-semibold mb-0">
+                            {data.name}{" "}
+                          </span>
+                        </Link>
+                      ) : (
+                        <span className=" font-semibold mb-0">
+                          {data.name}{" "}
+                        </span>
+                      )}
                       {(data as any).role && (
-                        <span className="text-gray-500 italic font-semibold"> | {(data as any).role}</span>
+                        <span className="text-gray-500">
+                          {" "}
+                          | {(data as any).role}
+                        </span>
                       )}
                     </section>
 
                     {Array.isArray((data as any).desc) ? (
-                      <ul className="list-disc ml-8">
-                        {(data as any).desc.map((value: any,idx: number) => (
+                      <ul className="list-disc ml-8 text-gray-400">
+                        {(data as any).desc.map((value: any, idx: number) => (
                           <li key={idx}>{value}</li>
                         ))}
                       </ul>
                     ) : (data as any).desc ? (
-                      <span className="mb-2 ml-3">{(data as any).desc}</span>
+                      <span className="mb-2 ml-3 text-gray-400">
+                        {(data as any).desc}
+                      </span>
                     ) : null}
                   </div>
                 </div>
