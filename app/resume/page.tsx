@@ -7,7 +7,7 @@ export default function Resume() {
       <div className="flex flex-col flex-grow">
         <div className="flex items-center mb-4">
           <h1 className="mr-3">Resume</h1>
-          <a href="/ishika_frontend_4yrs.pdf" download>
+          <a href="/ishika_frontend_4.pdf" download>
             <button className="border-2 border-yellow-500 rounded-xl bg-yellow-400 p-2">Download &#8595;</button>
           </a>
         </div>
